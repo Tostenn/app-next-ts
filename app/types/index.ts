@@ -1,6 +1,13 @@
 export interface IFood {
     name: string;
-    content: string
+    calories: number
+    carbohydrates: number
+    protein: number
+    sugar?: number
+    fat?: number
+    fiber?: number
+    vitamins?: string[]
+    minerals?: string[]
 }
 
 export interface IFoodReduced {

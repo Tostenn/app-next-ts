@@ -11,10 +11,6 @@ const navLinks = [
         href:"/post",
         name:"post",
     },
-    {
-        href:"/contact",
-        name:"contact",
-    },
 ]
 
 export default function Headers() {
@@ -22,8 +18,8 @@ export default function Headers() {
     const navLink = usePathname()
     
     return (
-        <header className="bg-green-700 p-3 flex items-center justify-around">
-            <div className="bg-green-100 text-green-800 w-max rounded-lg font-bold p-3 uppercase">next react ts</div>
+        <header className="fixed w-full top-0 bg-green-700 p-3 flex items-center justify-around">
+            <div className="bg-green-100 text-green-800 w-max rounded-lg font-bold p-3 uppercase">food warrior</div>
             <nav className="">
                 <ul className="flex justify-around gap-x-3">
                     {
@@ -34,8 +30,6 @@ export default function Headers() {
                             >{nav.name}</Link> 
                         </li>)
                     }
-                   
-                   
                 </ul>
             </nav>
         </header>

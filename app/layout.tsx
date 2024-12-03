@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="fr">
         <body className='bg-green-100 text-green-800'>
             <Headers />
-            <main className="container m-auto my-3">
+            <main className="container m-auto my-3 mt-24">
                 {children}
             </main>
         </body>
